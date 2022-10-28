@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-image: url("bgimg.webp");
+    color: azure;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'ubuntu',sans-serif;
+}
+nav ul li{
+    padding:12px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 45px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+.brand img{
+    width: 36px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size:1.3rem;
+}
+.container{
+    min-height: 68vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display:flex;
+    margin:13px auto;
+    width:70%;
+    border-radius: 12px;
+    padding:20px;
+    background-image: url('i.jpg');
+}
+ .songitemcontainer{
+    margin-top:24px;
+} 
+.bottom{
+    position:sticky;
+    height: 100px;
+    color:white;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top:11px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myprogressbar{
+    width:80vw ;
+    cursor: pointer;
+}
+.SongItem{
+    height:50px;
+   display: flex;
+   background-color: white;
+   color: black;
+   margin:12px 0;
+   justify-content: space-between;
+   align-items: center;
+   border-radius:34px;
+}
+.SongItem img{
+    width:43px;
+    margin:0 23px;
+    border-radius:34px;
+
+}
+.timestamp{
+    margin:0 20px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songinfo{
+    position:absolute;
+    /* left:0; */
+    left:5vw;
+    font-family: 'Varela Round',sans-serif;
+}
+.songinfo img{
+    opacity:0;
+    transition: opacity 0.3s ease-in;
+}
+
+.cell{
+	width: 18%;
+	height: 300px;
+	margin: 0 15px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+.cell img{
+	width: 150%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.container1 {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 0 5px;
+    border-radius: 8px;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    /* justify-content: center; */
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 97%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 4px 0px 5px ;
+  }
+  
+  .container1:hover .overlay {
+    opacity: 1;
+  }
+
+  .hin{
+    /* min-height: 68vh; */
+    /* background-color: black; */
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display:flex;
+    margin:13px auto;
+    /* width:70%; */
+    border-radius: 12px;
+    padding:10px;
+    /* background-image: url('i.jpg'); */
+}
