@@ -8,12 +8,12 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="musicpg.css">
-</head>
+</head> 
 <body>
-    <div class="navbar navbar-light bg-dark">Hello</div>
+    <div class="navbar navbar-light bg-dark"><a href="index2.html" style="color: white;"><i class="fa fa-arrow-left">&nbsp; Back</i></a></div>
     <br><br>
     <div class="container">
-        <table>
+        <table class="">
             <tr>
                 <td><img src="img.jpg" alt="hey"></td>
                 <td>
@@ -25,19 +25,56 @@
             </tr>
             <tr><td><div class="bi">
                 <i class="fa-3x fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;
-                <i class="fa-3x fa-regular fa-heart"></i>&nbsp;&nbsp;&nbsp;
-                <i class="fa-3x fa-solid fa-ellipsis"></i>
+                <i class="fa-3x far fa-heart"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fa-3x fa-solid fa-ellipsis dropbtn" onclick="myFunction()"></i>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Share</a>
+                    <a href="#about">Add to playlist</a>
+                    <a href="#contact">Download</a>
+                </div>
             </div></td></tr>
         </table>
     </div>
     <div class="bottom">
         <input type="range" name="range" id="myProgressBar" min="0" max="100" class="range">
         <div class="icons">
-            <i class="fa-solid fa-3x fa-step-backward"></i>
-            <i class="fa-solid fa-3x fa-circle-play"></i>
-            <i class="fa-solid fa-3x fa-step-forward"></i>
+            <i class="fa-solid fa-2x fa-shuffle"></i>&nbsp;
+            <i class="fa-solid fa-2x fa-step-backward"></i>&nbsp;
+            <i class="fa-solid fa-2x fa-circle-play p"></i>&nbsp;
+            <i class="fa-solid fa-2x fa-step-forward"></i>&nbsp;
+            <i class="fa-solid fa-2x fa-repeat"></i>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/1a68ee960b.js" crossorigin="anonymous"></script>
+    <script>
+        var h = document.querySelector('.fa-heart');
+        h.addEventListener('click',function(){
+            h.classList.toggle("fas");
+        })
+        var p = document.querySelector('.fa-circle-play');
+        p.addEventListener('click',function(){
+            p.classList.toggle("fa-circle-pause");
+        })
+        var p1 = document.querySelector('.p');
+        p1.addEventListener('click',function(){
+            p1.classList.toggle("fa-circle-pause");
+        })
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
