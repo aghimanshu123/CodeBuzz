@@ -20,4 +20,4 @@
 ## Team
 - [Aditya Sharma](https://github.com/adi-wav)
 - [Ashish Verma](https://github.com/ashish948)
-- [Himanshu Agrawal](https://github.com/aghimanshu123)
+- [Himanshu Kumar](https://github.com/aghimanshu123)
