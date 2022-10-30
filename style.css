@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body{
-    background-image: url("bgimg.webp");
+    background-image: url("images/bgimg.webp");
     color: azure;
 }
 *{
@@ -23,7 +23,7 @@ body{
     width:70%;
     border-radius: 12px;
     padding:20px;
-    background-image: url('i.jpg');
+    background-image: url('images/i.jpg');
 }
  .songitemcontainer{
     margin-top:24px;
